@@ -30,16 +30,11 @@ This project explores how EEG (brain signals) can be used to classify emotional 
 ### [📈 Results & Visualizations]()
 The model achieves approximately **65% accuracy** on the DEAP dataset (subject s01). Predictions become significantly more stable with temporal smoothing.
 
-<br>
+#### [Emotion Prediction Timeline]()
+![Emotion Prediction](assets/image_1.png)
 
-<p align="center">
-  <img src="./assets/image_1.png" width="45%" alt="Emotion Prediction" />
-  <img src="./assets/image_2.png" width="45%" alt="Confidence Over Time" />
-</p>
-
-<p align="center">
-  <em>Emotion prediction timeline (left) and confidence scores over time (right).</em>
-</p>
+#### [Confidence Over Time]()
+![Confidence Over Time](assets/image_2.png)
 
 ---
 
