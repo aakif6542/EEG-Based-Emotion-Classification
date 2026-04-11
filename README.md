@@ -4,7 +4,7 @@ This project explores how EEG (brain signals) can be used to classify emotional 
 
 ---
 
-### 🚀 What I Did
+### [🚀 What I Did]()
 - **Loaded EEG data** from the DEAP dataset.
 - **Applied Preprocessing**: Bandpass filtering and normalization.
 - **Extracted Features**: Mean, variance, and band power (Delta, Theta, Alpha, Beta).
@@ -15,7 +15,7 @@ This project explores how EEG (brain signals) can be used to classify emotional 
 
 ---
 
-### 📊 Emotion Mapping
+### [📊 Emotion Mapping]()
 | Valence | Arousal | Emotion |
 |:---:|:---:|:---:|
 | High | High | Excited |
@@ -27,16 +27,23 @@ This project explores how EEG (brain signals) can be used to classify emotional 
 
 ---
 
-### 📈 Results & Visualizations
+### [📈 Results & Visualizations]()
 The model achieves approximately **65% accuracy** on the DEAP dataset (subject s01). Predictions become significantly more stable with temporal smoothing.
 
-| Emotion Prediction & Timeline | Confidence Over Time |
-|:---:|:---:|
-| ![Emotion Prediction](assets/image_1.png) | ![Confidence Over Time](assets/image_2.png) |
+<br>
+
+<p align="center">
+  <img src="./assets/image_1.png" width="45%" alt="Emotion Prediction" />
+  <img src="./assets/image_2.png" width="45%" alt="Confidence Over Time" />
+</p>
+
+<p align="center">
+  <em>Emotion prediction timeline (left) and confidence scores over time (right).</em>
+</p>
 
 ---
 
-### 🛠️ How to Run
+### [🛠️ How to Run]()
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -49,7 +56,7 @@ The model achieves approximately **65% accuracy** on the DEAP dataset (subject s
 
 ---
 
-### ⚠️ Limitations
+### [⚠️ Limitations]()
 - **Single Subject**: Trained on subject s01 only (not generalized).
 - **Class Imbalance**: Low performance for "Calm" due to fewer samples.
 - **Simulated Real-time**: Processes trials iteratively, not via live EEG stream.
