@@ -1,49 +1,26 @@
-# 🧠 EEG Emotion Recognition using DEAP Dataset
+# EEG Emotion Recognition using DEAP Dataset
 
-This project explores how EEG (brain signals) can be used to classify emotional states. It uses the DEAP dataset and focuses on mapping signals to the valence-arousal model using frequency-based features.
+This project explores classification of emotional states from EEG signals using frequency-domain features and the Valence-Arousal model.
 
----
+## Methods
+- Bandpass filtering and normalization  
+- Feature extraction: mean, variance, and band power (Delta, Theta, Alpha, Beta)  
+- Power Spectral Density (PSD) for frequency analysis  
+- Random Forest classifier  
+- Sliding window + majority voting for temporal stabilization  
 
-### [🚀 What I Did]()
-- **Loaded EEG data** from the DEAP dataset.
-- **Applied Preprocessing**: Bandpass filtering and normalization.
-- **Extracted Features**: Mean, variance, and band power (Delta, Theta, Alpha, Beta).
-- **Frequency Analysis**: Used PSD (Power Spectral Density) for frequency-domain analysis.
-- **Model Training**: Trained a Random Forest classifier.
-- **Stabilization**: Used sliding windows and majority voting to stabilize predictions.
-- **Visualization**: Built a Streamlit app to visualize results in real-time.
+## Dataset
+- DEAP EEG dataset  
+- Single-subject (s01)
 
----
+## Results
+- Achieved stable classification across valence-arousal states  
+- Improved temporal consistency using smoothing techniques  
 
-### [📊 Emotion Mapping]()
-| Valence | Arousal | Emotion |
-|:---:|:---:|:---:|
-| High | High | Excited |
-| High | Low | Calm |
-| Low | High | Stressed |
-| Low | Low | Sad |
+## Limitations
+- Single-subject model (limited generalization)  
+- Class imbalance affecting certain emotional states  
+- Simulated real-time inference  
 
-*Note: Ambiguous samples (4–6 range) were removed.*
-
----
-
-### [🛠️ How to Run]()
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run the dashboard:
-   ```bash
-   streamlit run app.py
-   ```
-
----
-
-### [⚠️ Limitations]()
-- **Single Subject**: Trained on subject s01 only (not generalized).
-- **Class Imbalance**: Low performance for "Calm" due to fewer samples.
-- **Simulated Real-time**: Processes trials iteratively, not via live EEG stream.
-
----
-
-*This project is part of my exploration into EEG-based analysis and computational neuroscience.*
+## Conclusion
+EEG-based emotion recognition is feasible using frequency-domain features, but generalization across subjects remains a key challenge.
